@@ -1,0 +1,86 @@
+{
+  "contract_name": "ConvertLib",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "name": "conversionRate",
+          "type": "uint256"
+        }
+      ],
+      "name": "convert",
+      "outputs": [
+        {
+          "name": "convertedAmount",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x60606040523415600e57600080fd5b5b60908061001d6000396000f300606060405263ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166396e4ee3d8114603c575b600080fd5b6048600435602435605a565b60405190815260200160405180910390f35b8181025b929150505600a165627a7a72305820de0c9012ec74d7cf891a5f3e516dcf0083b16781a7441ba4015dc7eb6afc8bd10029",
+  "networks": {
+    "1500417775674": {
+      "events": {},
+      "links": {},
+      "address": "0xd4e355c27a996b380aff2a2d604f59f69ff0a73f",
+      "updated_at": 1500523864211
+    },
+    "1500730798164": {
+      "events": {},
+      "links": {},
+      "address": "0x5ef90a863d8340ca858aab8d8f577534e7ed2477",
+      "updated_at": 1500732045219
+    },
+    "1507606689091": {
+      "events": {},
+      "links": {},
+      "address": "0x2cd41ab4a6640291fdeb21af89d143298a6bc4b3",
+      "updated_at": 1507613910967
+    },
+    "1507614001194": {
+      "events": {},
+      "links": {},
+      "address": "0xf41c52ef6ee05fcd3564dbe6a2dbd862e6b2c371",
+      "updated_at": 1507614015509
+    },
+    "1507771332463": {
+      "events": {},
+      "links": {},
+      "address": "0xd8fcf48573e7d2394a45b26e7a46cbf0f8866a64",
+      "updated_at": 1507774778925
+    },
+    "1507780195816": {
+      "events": {},
+      "links": {},
+      "address": "0x35d6df7f7b2e01f00d9e8dd1204114a91c6adaa0",
+      "updated_at": 1507780320963
+    },
+    "1507780333262": {
+      "events": {},
+      "links": {},
+      "address": "0x3b7c762fa4e2d57c00b4c3786fe36459b19e58a7",
+      "updated_at": 1507780353363
+    },
+    "1507780563728": {
+      "events": {},
+      "links": {},
+      "address": "0x43660ae1f3b9d2dbe32015f51e8f3fbaa0a5fe31",
+      "updated_at": 1507780591056
+    },
+    "1507780665037": {
+      "events": {},
+      "links": {},
+      "address": "0xaec3b4a1f8a4f99dafa4ee9e439c0dea873fad47",
+      "updated_at": 1507780676552
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1507780676552
+}
