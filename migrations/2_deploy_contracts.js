@@ -1,5 +1,5 @@
-var Relations = artifacts.require("./Relations.sol");
+var LoveLocks = artifacts.require("./LoveLocks.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(Relations);
+  deployer.deploy(LoveLocks);
 };
