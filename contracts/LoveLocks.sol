@@ -6,7 +6,7 @@ contract LoveLocks{
 
 	struct LoveLock{
     bytes8 color;
-	bytes32 personA;
+	  bytes32 personA;
     bytes32 personB;
     bytes32 message1;
     bytes32 message2;
@@ -14,9 +14,10 @@ contract LoveLocks{
     bytes32 message4;
     uint8 xPos;
     uint8 yPos;
+    address id;
 	}
 
-  function addLoveLock(bytes8 _color, bytes32 _personA, bytes32 _personB, bytes32 _message1, bytes32 _message2, bytes32 _message3,bytes32 _message4, uint8 _xPos, uint8 _yPos) public returns (bool success){
+  function addLoveLock(bytes8 _color, bytes32 _personA, bytes32 _personB, bytes32 _message1, bytes32 _message2, bytes32 _message3,bytes32 _message4, uint8 _xPos, uint8 _yPos, address _id) public returns (bool success){
     LoveLock memory newLoveLock;
     newLoveLock.color = _color;
     newLoveLock.personA = _personA;
@@ -27,17 +28,19 @@ contract LoveLocks{
     newLoveLock.message4 = _message4;
     newLoveLock.xPos = _xPos;
     newLoveLock.yPos = _yPos;
+    newLoveLock.id = _id;
     lovelocks.push(newLoveLock);
     return true;
   }
 
-  function getLoveLocks() public constant returns (bytes8[], bytes32[], bytes32[], uint8[],uint8[]) {
+  function getLoveLocks() public constant returns (bytes8[], bytes32[], bytes32[], uint8[],uint8[],address[]) {
     uint length = lovelocks.length;
     bytes8[] memory colors = new bytes8[](length);
     bytes32[] memory personsA = new bytes32[](length);
     bytes32[] memory personsB = new bytes32[](length);
     uint8[] memory xPoses = new uint8[](length);
     uint8[] memory yPoses = new uint8[](length);
+    address[] memory ids = new address[](length);
 
     for (uint i = 0; i < lovelocks.length; i++){
 
@@ -49,8 +52,9 @@ contract LoveLocks{
       personsB[i] = currentLoveLock.personB;
       xPoses[i] = currentLoveLock.xPos;
       yPoses[i] = currentLoveLock.yPos;
+      ids[i] = currentLoveLock.id;
     }
-    return (colors, personsA,personsB,xPoses,yPoses);
+    return (colors, personsA,personsB,xPoses,yPoses,id);
   }
 
   function getLoveLockMsgs() public constant returns ( bytes32[], bytes32[], bytes32[], bytes32[]) {

@@ -217,8 +217,20 @@
       "links": {},
       "address": "0xc8e69905ba1b79a0d59a6dbf8e82eed483495d6d",
       "updated_at": 1508042912013
+    },
+    "1508059647906": {
+      "events": {},
+      "links": {},
+      "address": "0xc8e69905ba1b79a0d59a6dbf8e82eed483495d6d",
+      "updated_at": 1508059698330
+    },
+    "1508059815945": {
+      "events": {},
+      "links": {},
+      "address": "0x04ee4432be99f1dba4e72fca8020ea07cd492d7d",
+      "updated_at": 1508059834342
     }
   },
   "schema_version": "0.0.5",
-  "updated_at": 1508042912013
+  "updated_at": 1508059834342
 }
