@@ -19,11 +19,7 @@ contract LoveLocks{
 	}
 
   modifier isSpotAvail(){
-    bool avail = true;
-    if (loveLocks.length >= totalSpots){
-     isSpotAvail = false;
-    }
-    require(avail);
+    require(loveLocks.length < totalSpots);
     _;
   }
 
